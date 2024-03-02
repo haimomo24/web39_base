@@ -1,0 +1,28 @@
+/* resset browser  */
+ *{
+    padding:0;/* khoảng cách cá phần tử  */
+    margin:0; /* khoảng cách cá phần tử  */   
+
+ }   
+
+
+h1 {
+    color:blueviolet;
+}
+
+/* bộ chọn cha con  */
+
+p {
+    color:brown ;
+}
+div p {
+    color:black;
+}
+/* bộ chọn vs thẻ điều hướng   */
+
+a:link{
+    color:blue;
+}
+a:visited{
+    color:aqua;
+}
