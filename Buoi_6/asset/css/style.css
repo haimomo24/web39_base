@@ -1,0 +1,67 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* position static */
+.box-1 {
+    width: 300px;
+    height: 400px;
+    background-color: blueviolet;
+
+
+    /* mac dinh position static top left right bottom deu ko hoat dong   */
+}
+
+/* position relative */
+.box-2 {
+    width: 300px;
+    height: 400px;
+    background-color: aqua;
+    position: relative;
+
+
+}
+
+/* <!-- position absolute --> */
+.box-3 {
+    width: 300px;
+    height: 400px;
+    background-color: blueviolet;
+    position: relative;
+}
+
+.box-4 {
+    width: 50px;
+    height: 50px;
+    background-color: blue;
+    position: absolute;
+    top:50px;
+    
+}
+.box-5 {
+    width:50px;
+    height:50px;
+    background-color: black;
+    position: absolute;
+    top:80px;
+    /* z-index: 0;  do xep trong phan tu  */
+
+}
+.counter {
+    width:100%;
+    height:500px;
+    background-color: aquamarine;
+}
+/* position fixted */
+.box-6 {
+    width:90px;
+    height:90px;
+    background-color: brown;
+    border-radius: 50%;
+
+    position: fixed;
+    right:20px;
+    bottom:10px;
+}
