@@ -1,0 +1,174 @@
+* {
+    padding: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* animation loading  */
+.loading {
+    width:200px;
+    height:200px;
+    margin: auto;
+    border-radius: 50%;
+    border: 5px  solid salmon;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    /* su dung animation
+        amimation-name 
+        animation-duration chu ki thoi gian xoay
+        animation-delay: sau bao lau thi delay 
+        animation-iteration-count :xac dinh so vong xoay
+        animation-direction: chi dinh huong xoay 
+        animation-fill-mode: xac dinh trang thai cuoi cung cua animation
+        animation-timing-function xac dinh chuyen dong cua animation
+    */
+ 
+    animation: loading 1s 2s infinite alternate linear;
+   
+   
+}
+/* cu phap khai bao animation */
+@keyframes loading {
+    /* from tu dau ____ to : toi dau  */
+    from{
+        transform: rotate(0);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+
+    /*  cach viet khac 
+    0% {
+        tranfrom :rotate (0)
+
+    }
+    50% {
+        boder-color: red ;
+    }
+
+    100% {
+        translate :rotate (360deg)
+    }
+    
+    */
+}
+
+/* new animation */
+
+
+.box-1 {
+    width:280px;
+    height:40px;
+    background-color: blue;
+    border-radius: 20px;
+    margin: auto;
+    margin-top: 20px;
+
+    -webkit-animation: vibrate-1 0.3s linear infinite both;
+	 animation: vibrate-1 0.3s linear infinite both;
+}
+
+ @-webkit-keyframes vibrate-1 {
+    0% {
+      -webkit-transform: translate(0);
+              transform: translate(0);
+    }
+    20% {
+      -webkit-transform: translate(-2px, 2px);
+              transform: translate(-2px, 2px);
+    }
+    40% {
+      -webkit-transform: translate(-2px, -2px);
+              transform: translate(-2px, -2px);
+    }
+    60% {
+      -webkit-transform: translate(2px, 2px);
+              transform: translate(2px, 2px);
+    }
+    80% {
+      -webkit-transform: translate(2px, -2px);
+              transform: translate(2px, -2px);
+    }
+    100% {
+      -webkit-transform: translate(0);
+              transform: translate(0);
+    }
+  }
+  @keyframes vibrate-1 {
+    0% {
+      -webkit-transform: translate(0);
+              transform: translate(0);
+    }
+    20% {
+      -webkit-transform: translate(-2px, 2px);
+              transform: translate(-2px, 2px);
+    }
+    40% {
+      -webkit-transform: translate(-2px, -2px);
+              transform: translate(-2px, -2px);
+    }
+    60% {
+      -webkit-transform: translate(2px, 2px);
+              transform: translate(2px, 2px);
+    }
+    80% {
+      -webkit-transform: translate(2px, -2px);
+              transform: translate(2px, -2px);
+    }
+    100% {
+      -webkit-transform: translate(0);
+              transform: translate(0);
+    }
+  }
+  /* hear */
+  .wrap-box {
+    width:80px;
+   
+   
+    margin: auto;
+    margin-top: 50px;
+    position: relative;
+
+    animation: heart .8s infinite ;
+
+  }
+  .wrap-box div {
+    width:40px;
+    height:40px;
+    position: absolute;
+    
+  }
+
+
+  .wrap-box div:nth-child(1){
+    background-color: crimson;
+    top:0;
+    left:0;
+    transform:rotate(45deg) ;
+    border-radius: 50% 0 0 50%;
+
+  }
+  .wrap-box div:nth-child(2){
+    background-color: crimson;
+    top:0;
+    left:40px;
+    transform:rotate(45deg) ;
+    border-radius: 50% 50% 0 0;
+
+  }
+ .wrap-box div:nth-child(3){
+    background-color:  crimson;
+    top:20px;
+    left:20px;
+    transform: rotate(45deg);
+  }  
+
+  /* animation  */
+  @keyframes heart {
+    from {
+            transform: scale(1);
+    }
+    to{
+            transform: scale(2);
+    }
+  }
+ 
