@@ -1,0 +1,58 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* translate x,y */
+.box-1{
+    width:200px;
+    height:200px;
+    background-color: brown;
+    /* transform: translate(50px, 100px); */
+    /* transform: translateY(100px); */
+}
+/* scale */
+.box-2{
+    width:200px;
+    height:200px;
+    background-color: blue;
+    /* margin: auto; */
+
+
+}
+.box-2:hover{
+    /* width:300px;
+    height:300px; */
+    /* transform: scale(2,2); */
+}
+/* xoay phan tu rotate */
+.box-3 {
+    width:200px;
+    height:200px;
+    background-color: aqua;
+    margin: auto;
+    transform: rotate(45deg);
+}
+/* 3d transfrom  */
+.box-4 {
+    width:200px;
+    height:200px;
+    background-color: blueviolet;
+    transform: translate3d(0,0,50px);
+   
+}
+
+.box-5 {
+    width:200px;
+    height:200px;
+    background-color: chartreuse;
+    margin: auto;
+    transition: width 2s, height 2s ,transform .3s;
+   
+}
+.box-5:hover{
+    width:400px;
+    height:400px;
+    transform: rotate(45deg);
+}
